@@ -4,6 +4,12 @@
 
 @layer utilities{
   body{
-    @apply m-0 p-0 box-border
+    font-family: "Mulish", serif;
+    @apply box-border m-0 p-0
+  }
+
+
+  .container {
+    @apply max-w-[1630px] w-full px-5 mx-auto
   }
 }

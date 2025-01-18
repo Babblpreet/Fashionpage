@@ -4,7 +4,17 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
   theme: {
+    fontFamily: {
+      mulish_regular: ['"Mulish_regular"', 'serif'],
+      mulish_medium: ['"Mulish_medium"', 'serif'],
+      mulish_semibold: ['"Mulish_semibold"', 'serif'],
+      mulish_bold: ['"Mulish_bold"', 'serif'],
+      mulish_extrabold: ['"Mulish_extrabold"', 'serif'],
+      mulish_black: ['"Mulish_black"', 'serif'],
+    },
+
     extend: {
       colors: {
         orange: {

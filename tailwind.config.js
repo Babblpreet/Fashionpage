@@ -23,8 +23,10 @@ export default {
         gray: {
           "lightgray": "#78909c",
           "medgray": "#546e7a",
+          "midgray": "#607D8B",
           "highgray": "#455a64",
           "darkgray": "#37474f",
+
         },
       },
     },

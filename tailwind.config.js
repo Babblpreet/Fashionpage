@@ -16,6 +16,17 @@ export default {
     },
 
     extend: {
+      
+      keyframes: {
+        sparkle: {
+          '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+          '50%': { transform: 'scale(1.2)', opacity: '1' },
+        },
+      },
+      animation: {
+        sparkle: 'sparkle 2s infinite ease-in-out',
+      },
+
       colors: {
         orange: {
           'lightorange': "#f57e5d"

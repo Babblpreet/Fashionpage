@@ -11,6 +11,8 @@ import locationfinder from '../../assets/svg/MyLocationOutlined.svg'
 
 const Header = () => {
   const [rotate, newrotate] = useState(false);
+  const [currency, setCurrency] = useState(false);
+  const [lang, setLanguage] = useState(false);
 
   return (
     <header>
@@ -55,14 +57,14 @@ const Header = () => {
               <h2 className='font-mulish_regular text-sm leading-[22px] text-gray-lightgray'>Find Address</h2>
             </button>
             <div className='flex items-center gap-[10px]'>
-              <button onClick={() => newrotate(!rotate)} className='flex items-center py-[6px] px-2'>
+              <button onClick={() => setCurrency(!currency)} className='flex items-center py-[6px] px-2'>
                 <h2 className='font-mulish_regular text-xs leading-[14px] text-gray-midgray pr-[5px]'>$ USD</h2>
-                <img src={arrow} className={`py-[6px] px-[4.5px] transition-all duration-200 ${rotate && 'rotate-180'}`} alt="arrow" />
+                <img src={arrow} className={`py-[6px] px-[4.5px] transition-all duration-200 ${currency && 'rotate-180'}`} alt="arrow" />
               </button>
               <span className='border border-[#CFD8DC h-5'></span>
-              <button onClick={() => newrotate(!rotate)} className='flex items-center py-[6px] px-2'>
+              <button onClick={() => setLanguage(!lang)} className='flex items-center py-[6px] px-2'>
                 <h2 className='font-mulish_regular text-xs leading-[14px] text-gray-midgray pr-[16px]'>ENG</h2>
-                <img src={arrow} className={`py-[6px] px-[4.5px] transition-all duration-200 ${rotate && 'rotate-180'}`} alt="arrow" />
+                <img src={arrow} className={`py-[6px] px-[4.5px] transition-all duration-200 ${lang && 'rotate-180'}`} alt="arrow" />
               </button>
             </div>
           </div>

@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Header from './components/common/Header'
 import About from './pages/About'
 import Footer from './components/common/Footer'
+import MySwiper from './components/myswiper'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Route path='/about' element={<About/>}/>
      </Routes>
      <Footer/>
+     {/* <MySwiper/> */}
      </BrowserRouter>
     </>
   )

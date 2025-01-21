@@ -34,19 +34,18 @@ const Banner = () => {
                 <img src={play} className='max-w-none ml-[18px] cursor-pointer hover:scale-110 transition-transform duration-500 ease-in-out' alt="play" />
                 <h2 className='text-gray-highgray text-base leading-[25px] font-mulish_regular'>What On Trending?</h2>
               </div>
-              <div className='flex gap-6 mt-[80px] py-[14px] pl-[20px] max-w-[386px] w-full rounded-[70px] bg-white'>
-                <div className='inline-flex'>
+              <div className='flex mt-[80px] pt-[14px] pb-[10px] pl-[20px] max-w-[400px] w-full rounded-[70px] bg-white drop-shadow-[#0000000F]'>
+                <div className='flex'>
                   <img src={Avatar1} className='max-w-none z-50' alt="Avatar1" />
-                  <img src={Avatar2} className='max-w-none z-40 ml-[-20px]' alt="Avatar2" />
-                  <img src={Avatar3} className='max-w-none z-30 ml-[-20px]' alt="Avatar3" />
-                  <img src={Avatar4} className='max-w-none z-20 ml-[-20px]' alt="Avatar4" />
-                  <img src={Avatar5} className='max-w-none z-10 ml-[-20px]' alt="Avatar5" />
+                  <img src={Avatar2} className='max-w-none z-40 ml-[-25px]' alt="Avatar2" />
+                  <img src={Avatar3} className='max-w-none z-30 ml-[-25px]' alt="Avatar3" />
+                  <img src={Avatar4} className='max-w-none z-20 ml-[-25px]' alt="Avatar4" />
+                  <img src={Avatar5} className='max-w-none z-10 ml-[-25px]' alt="Avatar5" />
                 </div>
-                <div className='flex flex-col gap-2
-                '>
+                <div className='flex flex-col gap-[6px] pl-[56px]'>
                   <div className='flex pt-[3.5px]'>
                     <img src={rate} className='max-w-none' alt="" />
-
+                    <h2 className='text-base font-mulish_regular leading[25px] text-[#263238] pl-[10px]'>4.8 Ratings</h2>
                   </div>
                   <h2 className='text-xs font-mulish_regular leading[1.9px] text-gray-highgray'>(2,654 Reviews)</h2>
                 </div>

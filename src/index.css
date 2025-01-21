@@ -65,4 +65,9 @@
   .container {
     @apply max-w-[1630px] w-full px-5 mx-auto
   }
+
+  .padcontain{
+    @apply py-20
+  }
+
 }

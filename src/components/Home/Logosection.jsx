@@ -21,7 +21,7 @@ const Logosection = () => {
                             <h2 className='font-mulish_bold text-6xl leading-[85px] tracking-[0.5px] text-gray-darkgray'>Fashion Partners</h2>
                         </div>
                     </div>
-                    <div className="logos container ">
+                    <div className="logos container mt-[60px]">
                         <Swiper
                             slidesPerView={5}
                             spaceBetween={30}

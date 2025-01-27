@@ -6,17 +6,31 @@ import bucket from '../../assets/svg/bucket.svg'
 import login from '../../assets/svg/login.svg'
 import menulinks from '../../components/json/menu.json'
 import locationfinder from '../../assets/svg/MyLocationOutlined.svg'
+import usd from '../../assets/svg/dollar-sign-solid.svg'
+import euro from '../../assets/svg/euro-sign-solid.svg'
+import rub from '../../assets/svg/ruble-sign-solid.svg'
+import inr from '../../assets/svg/indian-rupee-sign-solid.svg'
 
 
 
 const Header = () => {
   const [rotate, newrotate] = useState(false);
+
+
+
   const [currency, setCurrency] = useState(false);
-  const [selectedCurrency, setSelectedCurrency] = useState("USD");
-  const handleCurrency = (selected) => {
-    setSelectedCurrency(selected);
-    setCurrency(false);
-  }; const [lang, setLanguage] = useState(false);
+  // const [selectedCurrency, setSelectedCurrency] = useState("USD");
+  // const handleCurrency = (selected) => {
+  //   setSelectedCurrency(selected);
+  //   setCurrency(false);
+  // };
+
+  const [lang, setLanguage] = useState(false);
+  // const [selectlang, setselectlang] = useState("ENG");
+  // const handlelang = (selected) => {
+  //   setselectlang(selected);
+  //   setLanguage(false);
+  // };
 
   return (
     <header>
@@ -62,30 +76,42 @@ const Header = () => {
             </button>
             <div className='flex items-center gap-[10px]'>
               <div className='relative inline-block'>
-                <button onClick={() => setCurrency(!currency)} className='flex items-center py-[6px] px-2'>
-                  <h2 className='font-mulish_regular text-xs leading-[14px] text-gray-midgray pr-[5px]'>{selectedCurrency}</h2>
+                <button onClick={() => setCurrency(!currency)} className='flex items-center py-[6px] px-2 max-w-[76px] w-full'>
+                  <h2 className='font-mulish_regular text-xs leading-[14px] text-gray-midgray pr-[5px]'>$ USD</h2>
                   <img src={arrow} className={`py-[6px] px-[4.5px] transition-all duration-200 ${currency ? 'rotate-180' : ""}`} alt="arrow" />
                 </button>
-                {/* Dropdown Menu */}
-                {currency && (
+
+                {/* { Dropdown Menu} */}
+                {/* {currency && (
                   <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 shadow-lg rounded-md w-[120px]">
-                    <div className="py-2 px-4 text-sm hover:bg-gray-100 cursor-pointer" onClick={() => handleCurrency("RUB")}>
-                      RUB
+                    <div className="py-2 px-4 text-sm hover:bg-gray-100 cursor-pointer"   onClick={() => handleCurrency("USD")}>
+                     <img src={usd} alt="" /> USD
+                    </div>
+                    <div className="py-2 px-4 text-sm hover:bg-gray-100 cursor-pointer"   onClick={() => handleCurrency("RUB")}>
+                     <img src={rub} alt="" /> RUB
                     </div>
                     <div className="py-2 px-4 text-sm hover:bg-gray-100 cursor-pointer" onClick={() => handleCurrency("EUR")}>
-                      EUR
+                     <img src={euro} alt="" /> EUR
                     </div>
                     <div className="py-2 px-4 text-sm hover:bg-gray-100 cursor-pointer" onClick={() => handleCurrency("INR")}>
-                      INR
+                     <img src={inr} alt="" /> INR
                     </div>
                   </div>
-                )}
+                )} */}
               </div>
               <span className='border border-[#CFD8DC h-5'></span>
-              <button onClick={() => setLanguage(!lang)} className='flex items-center py-[6px] px-2'>
-                <h2 className='font-mulish_regular text-xs leading-[14px] text-gray-midgray pr-[16px]'>ENG</h2>
-                <img src={arrow} className={`py-[6px] px-[4.5px] transition-all duration-200 ${lang && 'rotate-180'}`} alt="arrow" />
-              </button>
+              <div className='relative inline-block'>
+                <button onClick={() => setLanguage(!lang)} className='flex items-center py-[6px] px-2'>
+                  <h2 className='font-mulish_regular text-xs leading-[14px] text-gray-midgray pr-[16px]'>ENG</h2>
+                  <img src={arrow} className={`py-[6px] px-[4.5px] transition-all duration-200 ${lang && 'rotate-180'}`} alt="arrow" />
+                </button>
+                {/* {Dropdown Menu} */}
+                {/* {lang && (<div className='absolute top-full left-0 mt-2 bg-white border border-gray-200 shadow-lg rounded-md w-[120px]'>
+                  <div className="py-2 px-4 text-sm hover:bg-gray-100 cursor-pointer" onClick={() => handlelang("RUS")}>RUS</div>
+                  <div className="py-2 px-4 text-sm hover:bg-gray-100 cursor-pointer" onClick={() => handlelang("JAP")}>JAP</div>
+                  <div className="py-2 px-4 text-sm hover:bg-gray-100 cursor-pointer" onClick={() => handlelang("HIN")}>HIN</div>
+                </div>)} */}
+              </div>
             </div>
           </div>
         </div >

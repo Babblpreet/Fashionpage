@@ -1,19 +1,81 @@
 [
     {
-        "image":"greytshirt.png",
-        "title":"Grey Cotton T-Shirt"
+        "image": "../../assets/images/greytshirt.png",
+        "title": "Grey Cotton T-Shirt",
+        "heartsvg": "../../assets/svg/heart2card.svg",
+        "coloredtag": "New",
+        "star": "../../assets/svg/StarFilled.svg",
+        "price": "$ 20.00",
+        "discountprice": "$32.00",
+        "offpercent": "(15% Off)"
     },
     {
-        "image":"greytshirt.png",
-        "title":"Grey Cotton T-Shirt"
+        "image": "../../assets/images/bluetshirt.png",
+        "title": "Dark Blue T-Shirt",
+        "heartsvg": "../../assets/svg/heart2card.svg",
+        "coloredtag": "30% Off",
+        "star": "../../assets/svg/StarFilled.svg",
+        "price": "$ 20.00",
+        "discountprice": "$32.00",
+        "offpercent": "(15% Off)"
     },
     {
-        "image":"greytshirt.png",
-        "title":"Grey Cotton T-Shirt"
+        "image": "../../assets/images/redtshirt.png",
+        "title": "Sleeve Blouse Ruffle...",
+        "heartsvg": "../../assets/svg/heart2card.svg",
+        "star": "../../assets/svg/StarFilled.svg",
+        "price": "$ 20.00",
+        "discountprice": "$32.00",
+        "offpercent": "(15% Off)"
     },
     {
-        "image":"greytshirt.png",
-        "title":"Grey Cotton T-Shirt"
+        "image": "../../assets/images/redhoodie.png",
+        "title": "Red Bluza Hoodie T-shirt ",
+        "heartsvg": "../../assets/svg/heart2card.svg",
+        "coloredtag": "20% Off",
+        "star": "../../assets/svg/StarFilled.svg",
+        "price": "$ 20.00",
+        "discountprice": "$32.00",
+        "offpercent": "(15% Off)"
+    },
+    {
+        "image": "../../assets/images/darkgreenshirt.png",
+        "title": "Blouse T-shirt Clothing ",
+        "heartsvg": "../../assets/svg/heart2card.svg",
+        "coloredtag": "Top Rated",
+        "star": "../../assets/svg/StarFilled.svg",
+        "price": "$ 20.00",
+        "discountprice": "$32.00",
+        "offpercent": "(15% Off)"
+    },
+    {
+        "image": "../../assets/images/bluejeanshirt.png",
+        "title": "Jeans Denim  T- shirt",
+        "heartsvg": "../../assets/svg/heart2card.svg",
+        "coloredtag": "Sold Out",
+        "star": "../../assets/svg/StarFilled.svg",
+        "price": "$ 20.00",
+        "discountprice": "$32.00",
+        "offpercent": "(15% Off)"
+    },
+    {
+        "image": "../../assets/images/brownkot.png",
+        "title": " Sleeve Dress T-shirt  ",
+        "heartsvg": "../../assets/svg/heart2card.svg",
+        "coloredtag": "Top Rated",
+        "star": "../../assets/svg/StarFilled.svg",
+        "price": "$ 20.00",
+        "discountprice": "$32.00",
+        "offpercent": "(15% Off)"
+    },
+    {
+        "image": "../../assets/images/pinkskirt.png",
+        "title": "Diving watch ",
+        "heartsvg": "../../assets/svg/heart2card.svg",
+        "coloredtag": "New",
+        "star": "../../assets/svg/StarFilled.svg",
+        "price": "$ 20.00",
+        "discountprice": "$32.00",
+        "offpercent": "(15% Off)"
     }
-
 ]

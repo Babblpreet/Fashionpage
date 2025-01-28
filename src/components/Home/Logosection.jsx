@@ -17,8 +17,8 @@ const Logosection = () => {
                 <div className='padcontain'>
                     <div className='container'>
                         <div className='flex flex-col items-center'>
-                            <h2 className='font-mulish_semibold text-2xl leading-[35px] text-orange-lightorange'>Our Partners</h2>
-                            <h2 className='font-mulish_bold text-6xl leading-[85px] tracking-[0.5px] text-gray-darkgray'>Fashion Partners</h2>
+                            <h2 className='commonheadname'>Our Partners</h2>
+                            <h2 className='commonheading'>Fashion Partners</h2>
                         </div>
                     </div>
                     <div className="logos container mt-[60px]">

@@ -70,4 +70,12 @@
     @apply py-20
   }
 
+  .commonheadname{
+    @apply font-mulish_semibold text-2xl leading-[35px] text-orange-lightorange
+  }
+
+
+  .commonheading{
+    @apply font-mulish_bold text-6xl leading-[85px] tracking-[0.5px] text-gray-darkgray
+  }
 }

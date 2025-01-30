@@ -2,12 +2,16 @@
     {
         "image": "src/assets/images/grabuptopic1.png",
         "tittle": "Grab Upto 50% Off",
-        "heading":"Bigest Sale On Men's Wear Fashion"
+        "heading": "Bigest Sale On Men's Wear Fashion"
     },
-    
     {
-        "image": "src/assets/images/grabuptopic2.png",
+        "image": "src/assets/images/grabuptopic1.png",
         "tittle": "Grab Upto 50% Off",
-        "heading":"Bigest Sale On Women's Wear Fashion"
+        "heading": "Bigest Sale On Women's Wear Fashion"
+    },
+    {
+        "image": "src/assets/images/grabuptopic1.png",
+        "tittle": "Grab Upto 50% Off",
+        "heading": "Bigest Sale On Women's Wear Fashion"
     }
 ]

@@ -12,29 +12,32 @@ const Grab = () => {
             <section>
                 <div className='padcontain'>
                     <div className='container'>
-                        <Swiper slidesPerView={1}
-                            spaceBetween={30}
-                            autoplay={{
-                                delay: 1500,
-                                disableOnInteraction: false,
-                            }}
-                            loop={true}
-                            modules={[Autoplay]}
-                            className="mySwiper"
-                        >
-                            {
-                                grabupto.map((item, index) => (
-                                    <SwiperSlide key={index} to={item.to}>
-                                        <div className="max-w-[1185px] h-[440px] w-full" style={{ backgroundImage: `url(${item.image})` }}
-                                        >
+                        <div className=''>
+                            <Swiper
+                                slidesPerView={1.5}
+                                spaceBetween={30}
+                                autoplay={{
+                                    delay: 2000,
+                                    disableOnInteraction: false,
+                                }}
+                                loop={true}
+                                modules={[Autoplay]}
+                                className="mySwiper"
+                            >
+                                {
+                                    grabupto.map((item, index) => (
+                                        <SwiperSlide key={index} className=''>
+                                            <div
 
-                                        </div>
-                                    </SwiperSlide>
-                                ))
-                            }
-
-
-                        </Swiper>
+                                                className="max-w-[1185px] w-full h-[440px] bg-no-repeat bg-center rounded-lg shadow-lg"
+                                                style={{ backgroundImage: `url(${item.image})` }}
+                                            >
+                                            </div>
+                                        </SwiperSlide>
+                                    ))
+                                }
+                            </Swiper>
+                        </div>
                     </div>
                 </div>
             </section>

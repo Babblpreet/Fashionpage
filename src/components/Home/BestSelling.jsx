@@ -28,9 +28,11 @@ const BestSelling = () => {
 
                         {SellingCards.map((item, index) => (
                             <div key={index} to={item.to} className='p-[14px] bg-white rounded-[14px]'>
-                                <div className='relative  max-w-[347px] w-full  h-[364px] bg-[#FBFBFB] flex items-center justify-center rounded-[10px] mb-[14px]' >
+                                <div className='relative group max-w-[347px] w-full  h-[364px] bg-[#FBFBFB] flex items-center justify-center rounded-[10px] mb-[14px]' >
                                     <img src={item.image} alt={item.title} />
-                                    <h2 className='absolute'>{item.coloredtag}</h2>
+                                    <button className='absolute bottom-[10px] hidden group-hover:block transition-transform
+                                    duration-500 ease-in-out py-4 px-[94px] rounded-lg bg-orange-lightorange'><h2 className='font-mulish_semibold text-xl leading-7 text-white'>Add To Cart</h2></button>
+                                    <h2 className='absolute top-[19px] left-[14px] py-1 px-3 bg-red-400 rounded-[18px] font-mulish_regular text-[13px] leading-[18px]'>{item.coloredtag}</h2>
                                     <div className={`absolute p-[9px] rounded-full top-[14px] right-[14px] transition-transform duration-300 ease-in-out    hover:scale-105 cursor-pointer ${like ? 'bg-red-500' : 'bg-white'}`} onClick={handlelike}><img src={item.heartsvg} alt="like" />
                                     </div>
                                 </div>

@@ -1,8 +1,11 @@
 import React, { Fragment, useState } from 'react'
 
-const SellingCards = ({ image, title, heartsvg, coloredtag, star, rated, price, discountprice, offpercent }) => {
+const SellingCards = ({ image, title, heartsvg, coloredtag, star, rated, price, discountprice, offpercent, selectcolors, colors }) => {
 
-    const [like, setlike] = useState(false)
+
+    const [like, setlike] = useState(false);
+    const [selectedColor, setSelectedColor] = useState(colors[0]);
+
 
     const handlelike = (likeclick) => {
         setlike(!like);
@@ -29,7 +32,19 @@ const SellingCards = ({ image, title, heartsvg, coloredtag, star, rated, price, 
                             <h3 className='font-mulish_regular text-base leading-[25px] text-gray-lightgray'>{rated}</h3>
                         </div>
                     </div>
-                    <div></div>
+                    <div className="flex gap-2 items-center">
+                        <h2 className="font-mulish_regular text-sm leading-[22px] text-gray-lightgray">{selectcolors}</h2>
+                        <div className='flex gap[6px]'>
+                            {colors.map((color, index) => (
+                                <button
+                                    key={index}
+                                    className={`w-[16px] h-[16px] rounded-full border-2 ${selectedColor === color ? 'border-black' : 'border-white'}`}
+                                    style={{ backgroundColor: color }}
+                                    onClick={() => setSelectedColor(color)}
+                                ></button>
+                            ))}
+                        </div>
+                    </div>
                     <div className='flex gap-[6px] items-center'>
                         <h2 className='font-mulish_semibold text-2xl leading-[35px] text-gray-darkgray'>{price}</h2>
                         <h3 className='font-mulish_regular line-through text-base leading-[25px] text-[#B0BEC5] '>{discountprice}</h3>

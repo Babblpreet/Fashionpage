@@ -14,8 +14,8 @@ const Grab = () => {
                     <div className='container'>
                         <div className=''>
                             <Swiper
-                                slidesPerView={1.5}
-                                spaceBetween={30}
+                                slidesPerView={1.3}
+                                spaceBetween={0}
                                 autoplay={{
                                     delay: 2000,
                                     disableOnInteraction: false,
@@ -29,9 +29,14 @@ const Grab = () => {
                                         <SwiperSlide key={index} className=''>
                                             <div
 
-                                                className="max-w-[1185px] w-full h-[440px] bg-no-repeat bg-center rounded-lg shadow-lg"
+                                                className="relative max-w-[1185px] w-full h-[440px] bg-no-repeat bg-center rounded-lg shadow-lg"
                                                 style={{ backgroundImage: `url(${item.image})` }}
                                             >
+                                                <div className='absolute top-[128px] right-[149px]'>
+                                                    <h2 className='text-2xl font-mulish_semibold text-orange-lightorange leading-[35px]'>Grab Upto 50% Off</h2>
+                                                    <h2 className='font-mulish_bold text-5xl leading-[65px] mt-5 max-w-[496px] text-gray-darkgray'>Bigest Sale On Men's
+                                                        Wear Fashion</h2>
+                                                </div>
                                             </div>
                                         </SwiperSlide>
                                     ))

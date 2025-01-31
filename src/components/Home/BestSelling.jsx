@@ -24,18 +24,20 @@ const BestSelling = () => {
 
                         {SellingCards.map((item, index) => (
                             <Selling
-                            key={index}
-                            image={item.image}
-                            title={item.title}
-                            heartsvg={item.heartsvg}
-                            coloredtag={item.coloredtag}
-                            star={item.star}
-                            rated={item.rated}
-                            price={item.price}
-                            discountprice={item.discountprice}
-                            offpercent={item.offpercent}
+                                key={index}
+                                image={item.image}
+                                title={item.title}
+                                heartsvg={item.heartsvg}
+                                coloredtag={item.coloredtag}
+                                star={item.star}
+                                selectcolors={item.selectcolors}
+                                colors={item.colors}
+                                rated={item.rated}
+                                price={item.price}
+                                discountprice={item.discountprice}
+                                offpercent={item.offpercent}
                             />
-                            
+
                         ))
                         }
                     </div>

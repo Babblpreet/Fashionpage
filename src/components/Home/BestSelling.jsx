@@ -29,6 +29,7 @@ const BestSelling = () => {
                                 title={item.title}
                                 heartsvg={item.heartsvg}
                                 coloredtag={item.coloredtag}
+                                coloroftag={item.coloroftag}
                                 star={item.star}
                                 selectcolors={item.selectcolors}
                                 colors={item.colors}

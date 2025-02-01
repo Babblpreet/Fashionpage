@@ -34,7 +34,7 @@ const Banner = () => {
                 <img src={play} className='max-w-none ml-[18px] cursor-pointer hover:scale-110 transition-transform duration-500 ease-in-out' alt="play" />
                 <h2 className='text-gray-highgray text-base leading-[25px] font-mulish_regular'>What On Trending?</h2>
               </div>
-              <div className='flex mt-[80px] pt-[14px] pb-[10px] pl-[20px] max-w-[400px] w-full rounded-[70px] bg-white drop-shadow-[#0000000F]'>
+              <div className='flex mt-20 pt-[14px] pb-[10px] pl-5 max-w-[400px] w-full rounded-[70px] bg-white'>
                 <div className='flex'>
                   <img src={Avatar1} className='max-w-none z-50' alt="Avatar1" />
                   <img src={Avatar2} className='max-w-none z-40 ml-[-25px]' alt="Avatar2" />

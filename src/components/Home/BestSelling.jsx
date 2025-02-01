@@ -10,6 +10,7 @@ const BestSelling = () => {
 
     return (
         <>
+        <section>
             <div className='padcontain bg-[#F57E5D0A]'>
                 <div className='container'>
                     <div className='flex items-center justify-between'>
@@ -45,6 +46,7 @@ const BestSelling = () => {
 
                 </div>
             </div>
+            </section>
         </>
     )
 }

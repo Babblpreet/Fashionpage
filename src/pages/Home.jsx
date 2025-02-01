@@ -5,6 +5,7 @@ import Categorysec from '../components/Home/Categorysec.jsx'
 import BestSelling from '../components/Home/BestSelling.jsx'
 import Grab from '../components/Home/Grab.jsx'
 import Explorebycat from '../components/Home/Explorebycat.jsx'
+import Offersec from "../components/Home/Offersec.jsx";
 
 
 
@@ -17,6 +18,7 @@ const Home = () => {
       <BestSelling />
       <Grab />
       <Explorebycat />
+      <Offersec/>
     </>
   )
 }

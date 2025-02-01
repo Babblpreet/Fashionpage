@@ -4,6 +4,7 @@ import Logosection from '../components/Home/Logosection.jsx'
 import Categorysec from '../components/Home/Categorysec.jsx'
 import BestSelling from '../components/Home/BestSelling.jsx'
 import Grab from '../components/Home/Grab.jsx'
+import Explorebycat from '../components/Home/Explorebycat.jsx'
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
       <Categorysec />
       <BestSelling />
       <Grab />
+      <Explorebycat />
     </>
   )
 }

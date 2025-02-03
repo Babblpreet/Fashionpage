@@ -6,6 +6,8 @@ import BestSelling from '../components/Home/BestSelling.jsx'
 import Grab from '../components/Home/Grab.jsx'
 import Explorebycat from '../components/Home/Explorebycat.jsx'
 import Offersec from "../components/Home/Offersec.jsx";
+import Budgetdeals from '../components/Home/Budgetdeals.jsx'
+
 
 
 
@@ -18,7 +20,8 @@ const Home = () => {
       <BestSelling />
       <Grab />
       <Explorebycat />
-      <Offersec/>
+      <Offersec />
+      <Budgetdeals />
     </>
   )
 }

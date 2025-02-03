@@ -35,7 +35,6 @@ const SellingCards = ({ image, title, heartsvg, coloredtag, star, rated, price, 
                         <h2 className="font-mulish_regular text-sm leading-[22px] text-gray-lightgray">{selectcolors}</h2>
                         <div className='flex gap-[6px]'>
                             {colors.map((color, index) => (
-
                                 <button
                                     key={index}
                                     className={`w-[20px] h-[20px] rounded-full border-2 ${selectedColor === color ? 'border-black' : 'border-none'
@@ -44,7 +43,7 @@ const SellingCards = ({ image, title, heartsvg, coloredtag, star, rated, price, 
                                 >
                                     <span
                                         className="w-[14px] h-[14px] rounded-full"
-                                        style={{ backgroundColor: color }}
+                                        style={{ backgroundColor: color}}
                                     ></span>
                                 </button>
 

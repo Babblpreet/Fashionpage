@@ -1,14 +1,14 @@
 [
     {
-        "image":"src/assets/images/Offer.png",
-        "title":"Top Brands Kidswear",
-        "start":"Stating From",
-        "price":"$40.00/-"
+        "image": "src/assets/images/Offer.png",
+        "title": "Top Brands Kidswear",
+        "start": "Stating From",
+        "price": "$40.00/-"
     },
     {
-        "image":"src/assets/images/Offer.png",
-        "title":"Top Brands Kidswear",
-        "start":"Stating From",
-        "price":"$40.00/-"
+        "image": "src/assets/images/Offer2.png",
+        "title": "Oley Goggles",
+        "start": "Min.",
+        "price": "40% Off"
     }
 ]

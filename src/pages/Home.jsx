@@ -5,8 +5,10 @@ import Categorysec from '../components/Home/Categorysec.jsx'
 import BestSelling from '../components/Home/BestSelling.jsx'
 import Grab from '../components/Home/Grab.jsx'
 import Explorebycat from '../components/Home/Explorebycat.jsx'
-import Offersec from "../components/Home/Offersec.jsx";
+import Offersec from "../components/Home/Offersec.jsx"
 import Budgetdeals from '../components/Home/Budgetdeals.jsx'
+import SellingData from '../components/json/Selling.json'
+import DealOnSale from "../components/json/dealsonsale.json";
 
 
 
@@ -17,11 +19,14 @@ const Home = () => {
       <Banner />
       <Logosection />
       <Categorysec />
-      <BestSelling />
+      <BestSelling heading={"Best Selling Products"} headname={"Products"} data={SellingData} step={"solid"}/>
       <Grab />
       <Explorebycat />
       <Offersec />
       <Budgetdeals />
+      <BestSelling heading={"Deals On Sale"} headname={"Sale"} data={DealOnSale} step={false}/>
+
+
     </>
   )
 }

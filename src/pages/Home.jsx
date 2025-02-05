@@ -19,12 +19,12 @@ const Home = () => {
       <Banner />
       <Logosection />
       <Categorysec />
-      <BestSelling heading={"Best Selling Products"} headname={"Products"} data={SellingData} step={"solid"}/>
+      <BestSelling heading={"Best Selling Products"} headname={"Products"} data={SellingData} />
       <Grab />
       <Explorebycat />
       <Offersec />
       <Budgetdeals />
-      <BestSelling heading={"Deals On Sale"} headname={"Sale"} data={DealOnSale} step={false}/>
+      <BestSelling heading={"Deals On Sale"} headname={"Sale"} data={DealOnSale} bgNone={true} view={true}/>
 
 
     </>

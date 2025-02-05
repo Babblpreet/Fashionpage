@@ -4,19 +4,20 @@ import maskedarrow from '../../assets/svg/Maskedarrow.svg'
 import Selling from '../cards/SellingCards'
 // import CountdownTimer from '../Ui/CountdownTimer'
 
-const BestSelling = ({ heading, data, headname }) => {
+const BestSelling = ({ heading, data, headname, bgNone , view}) => {
     return (
         <>
-            <section>
-                <div className='padcontain bg-[#F57E5D0A]'>
+            <section className={bgNone ? "" : "bg-[#F57E5D0A]"}>
+                <div className='padcontain'>
                     <div className='container'>
                         <div className='flex items-center justify-between'>
                             <div className='flex flex-col'>
                                 <h2 className='commonheadname'>{headname}</h2>
                                 <h2 className='commonheading'>{heading}</h2>
                             </div>
-                            <button className='border-none py-[10px] px-4 items-center flex gap-2'><h2 className='text-orange-lightorange'>View All</h2><img src={maskedarrow} alt="maskedarrow " /></button>
+                            <button className={`border-none py-[10px] px-4 items-center flex gap-2 ${view ? "hidden" : "block"}`}><h2 className='text-orange-lightorange'>View All</h2><img src={maskedarrow} alt="maskedarrow " /></button>
                         </div>
+                        {/* <CountdownTimer targetDate="2025-03-01" /> */}
 
                         <div className='grid grid-cols-4 gap-[30px] mt-[60px]'>
 
@@ -44,7 +45,6 @@ const BestSelling = ({ heading, data, headname }) => {
                     </div>
                 </div>
             </section>
-            {/* <CountdownTimer  targetDate="2025-03-01"/> */}
         </>
     )
 }

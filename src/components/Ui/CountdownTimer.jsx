@@ -10,7 +10,7 @@ const CountdownTimer = ({ targetDate }) => {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / (1000 * 60)) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
+        // seconds: Math.floor((difference / 1000) % 60),
       };
     }
 
@@ -28,13 +28,15 @@ const CountdownTimer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="text-black" style={{ textAlign: "center", fontSize: "20px", fontWeight: "bold" }}>
-      <span>{timeLeft.days}d </span>
-      <span>{timeLeft.hours}h </span>
-      <span>{timeLeft.minutes}m </span>
-      <span>{timeLeft.seconds}s</span>
+    <div className="flex gap-[10px] items-center font-mulish_medium text-[#02A77D] text-xl leading-[30px]">
+      <span className="bg-[#02A77D14] py-2 px-[11px] rounded-md">{timeLeft.days} </span>
+      <span>:</span>
+      <span className="bg-[#02A77D14] py-2 px-[11px] rounded-md">{timeLeft.hours} </span>
+      <span>:</span>
+      <span className="bg-[#02A77D14] py-2 px-[11px] rounded-md">{timeLeft.minutes} </span>
+      {/* <span>{timeLeft.seconds}s</span> */}
     </div>
   );
 };
 
-export default CountdownTimer;
+export default CountdownTimer;

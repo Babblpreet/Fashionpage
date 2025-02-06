@@ -9,6 +9,7 @@ import Offersec from "../components/Home/Offersec.jsx"
 import Budgetdeals from '../components/Home/Budgetdeals.jsx'
 import SellingData from '../components/json/Selling.json'
 import DealOnSale from "../components/json/dealsonsale.json";
+import LiveSale from '../components/Home/LiveSale.jsx'
 
 
 
@@ -24,9 +25,8 @@ const Home = () => {
       <Explorebycat />
       <Offersec />
       <Budgetdeals />
-      <BestSelling heading={"Deals On Sale"} headname={"Sale"} data={DealOnSale} bgNone={true} view={true}/>
-
-
+      <BestSelling heading={"Deals On Sale"} headname={"Sale"} data={DealOnSale} bgNone={true} view={true} />
+      <LiveSale />
     </>
   )
 }

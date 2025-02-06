@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 // import SellingCards from '../json/Selling.json'
 import maskedarrow from '../../assets/svg/Maskedarrow.svg'
 import Selling from '../cards/SellingCards'
-// import CountdownTimer from '../Ui/CountdownTimer'
+import CountdownTimer from '../Ui/CountdownTimer'
 
-const BestSelling = ({ heading, data, headname, bgNone , view}) => {
+const BestSelling = ({ heading, data, headname, bgNone, view }) => {
     return (
         <>
             <section className={bgNone ? "" : "bg-[#F57E5D0A]"}>
@@ -16,9 +16,11 @@ const BestSelling = ({ heading, data, headname, bgNone , view}) => {
                                 <h2 className='commonheading'>{heading}</h2>
                             </div>
                             <button className={`border-none py-[10px] px-4 items-center flex gap-2 ${view ? "hidden" : "block"}`}><h2 className='text-orange-lightorange'>View All</h2><img src={maskedarrow} alt="maskedarrow " /></button>
+                            <div className={`${view ? "block" : "hidden"} flex gap-[14px] items-center`}>
+                                <h2 className='font-mulish_regular text-base leading-[25px] text-gray-highgray'>Deals Ends In :</h2>
+                                <CountdownTimer targetDate="2025-03-01" />
+                            </div>
                         </div>
-                        {/* <CountdownTimer targetDate="2025-03-01" /> */}
-
                         <div className='grid grid-cols-4 gap-[30px] mt-[60px]'>
 
                             {data.map((item, index) => (

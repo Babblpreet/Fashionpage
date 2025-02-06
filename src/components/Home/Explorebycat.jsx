@@ -19,7 +19,7 @@ const Explorebycat = () => {
                         <div className='mt-[60px] flex gap-[30px]'>
                             {
                                 explorebycat.map((item, index) => (
-                                    <div className='flex flex-col items-center gap-5 pb-5 group' key={index} >
+                                    <div className='flex flex-col items-center gap-5 pb-5' key={index} >
                                         <div className='rounded-t-[50px] max-w-[240px] w-full h-[280px] overflow-hidden'>
                                             <img className='transition-all ease-in-out duration-500 hover:scale-105' src={item.image} alt={item.title} />
                                         </div>

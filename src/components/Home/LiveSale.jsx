@@ -7,7 +7,7 @@ const LiveSale = () => {
             <div className="padcontain">
                 <div className="container">
                     <div className="bg-cover bg-center h-[420px] w-full relative" style={{ backgroundImage: `url(${image})` }}>
-                        <div className="absolute inset-0 bg-[#021635] opacity-80">
+                        <div className="absolute">
 
                         </div>
                     </div>

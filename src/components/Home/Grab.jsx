@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+
 const Grab = () => {
     return (
         <>
@@ -28,7 +29,6 @@ const Grab = () => {
                                     grabupto.map((item, index) => (
                                         <SwiperSlide key={index} className=''>
                                             <div
-
                                                 className="relative max-w-[1185px] w-full h-[440px] bg-no-repeat bg-center rounded-lg shadow-lg"
                                                 style={{ backgroundImage: `url(${item.image})` }}
                                             >

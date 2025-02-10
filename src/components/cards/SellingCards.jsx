@@ -1,6 +1,6 @@
-import React, { Fragment, useState } from 'react'
+import React, { useState } from 'react'
 
-const SellingCards = ({ step, image, title, heartsvg, coloredtag, star, rated, price, discountprice, offpercent, selectcolors, colors, coloroftag }) => {
+const SellingCards = ({ showRating, image, title, heartsvg, coloredtag, star, rated, price, discountprice, offpercent, selectcolors, colors, coloroftag }) => {
 
 
     const [like, setlike] = useState(false);
@@ -26,10 +26,12 @@ const SellingCards = ({ step, image, title, heartsvg, coloredtag, star, rated, p
                 <div className={`flex flex-col gap-[10px] py-1 ${!colors && 'items-center gap-[6px] py-0'}`}>
                     <div className={`flex justify-between items-center ${!colors && "flex-col gap-[6px]"}`}>
                         <h2 className='font-mulish_medium text-xl leading-[30px] text-gray-medgray'>{title}</h2>
-                        <div className='flex gap-1'>
-                            <img src={star} alt="star" />
-                            <h3 className='font-mulish_regular text-base leading-[25px] text-gray-lightgray'>{rated}</h3>
-                        </div>
+                        {!showRating && (
+                            <div className="flex gap-1">
+                                <img src={star} alt="star" />
+                                <h3 className="font-mulish_regular text-base leading-[25px] text-gray-lightgray">{rated}</h3>
+                            </div>
+                        )}
                     </div>
                     {
                         colors && (<>

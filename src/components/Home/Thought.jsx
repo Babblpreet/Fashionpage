@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 const Thought = () => {
-    return (
+    return (    
         <section>
             <div className="padcontain">
                 <div className="container">

@@ -11,6 +11,7 @@ import SellingData from '../components/json/Selling.json'
 import DealOnSale from "../components/json/dealsonsale.json";
 import LiveSale from '../components/Home/LiveSale.jsx'
 import Thought from '../components/Home/Thought.jsx'
+import Feature from '../components/Home/Feature.jsx'
 
 
 
@@ -29,6 +30,7 @@ const Home = () => {
       <BestSelling heading={"Deals On Sale"} headname={"Sale"} data={DealOnSale} bgNone={true} view={true} />
       <LiveSale />
       <Thought />
+      <Feature />
     </>
   )
 }

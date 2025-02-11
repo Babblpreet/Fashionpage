@@ -10,6 +10,7 @@ import Avatar3 from '../../assets/images/Avatar3.png'
 import Avatar4 from '../../assets/images/Avatar4.png'
 import Avatar5 from '../../assets/images/Avatar5.png'
 import Buttonreuse from '../Ui/Buttonreuse'
+import { Link } from 'react-router-dom'
 
 
 
@@ -31,7 +32,9 @@ const Banner = () => {
               <p className="relative after:bg-no-repeat after:bg-[url('/src/assets/images/lowshine.png')] after:absolute after:top-[40px] after:left-[12px] after:z-10 after:animate-sparkle  after:w-[70px] after:h-[70px] font-mulish_semibold text-gray-midgray text-2xl leading-[35px] max-w-[732px] w-full pt-[30px]">We Try Our Best Product For Shipping, Along With Tracking Info.
                 We Inform Order Within 24hours In Your Email Address.</p>
               <div className='pt-[80px] flex items-center'>
-                <Buttonreuse children={"Shop Now"}/>
+                <Link to={"/arrival"}>
+                  <Buttonreuse variant={"Solid"} children={"Shop Now"} />
+                </Link>
                 <img src={play} className='max-w-none ml-[18px] cursor-pointer hover:scale-110 transition-transform duration-500 ease-in-out' alt="play" />
                 <h2 className='text-gray-highgray text-base leading-[25px] font-mulish_regular'>What On Trending?</h2>
               </div>

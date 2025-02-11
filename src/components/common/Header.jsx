@@ -6,6 +6,7 @@ import bucket from '../../assets/svg/bucket.svg'
 import login from '../../assets/svg/login.svg'
 import menulinks from '../../components/json/menu.json'
 import locationfinder from '../../assets/svg/MyLocationOutlined.svg'
+import { Link } from 'react-router-dom';
 // import currencyback from '../../components/json/currency.json'
 
 
@@ -21,7 +22,9 @@ const Header = () => {
       <header>
         <div className='container pt-[30px] pb-[30px] flex flex-col gap-[14px]'>
           <div className='flex items-center justify-between'>
-            <h1 className='text-orange-lightorange font-mulish_bold text-[28px] leading-[38px]'>FashionCarts<span className='text-[#02A77D]'>.</span></h1>
+            <Link to={"/home"}>
+              <h1 className='text-orange-lightorange font-mulish_bold text-[28px] leading-[38px]'>FashionCarts<span className='text-[#02A77D]'>.</span></h1>
+            </Link>
             <div className='flex max-w-[1090px] w-full'>
               <div onClick={() => newrotate(!rotate)} className='flex max-w-[152px] w-full gap-[6px] py-[13px] px-3 bg-[#F6F8FA] rounded-l-md group hover:scale-105 transition-transform duration-500 ease-in-out cursor-pointer'>
                 <h2 className='text-base text-gray-medgray leading-[22px] font-mulish_medium'>All Categories</h2>

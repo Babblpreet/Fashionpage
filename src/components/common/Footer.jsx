@@ -87,7 +87,7 @@ const Footer = () => {
                   ))
                 }
               </div>
-              <div className='flex items-center gap-5'>
+              <div className='flex items-center gap-5 max-w-[375px] w-full justify-end'>
                 <button onClick={() => setCurrency(!currency)} className='flex items-center py-[6px] px-2 border border-gray-midgray rounded-[4px]'>
                   <h2 className='font-mulish_regular text-xs leading-[14px] text-gray-midgray'>$ USD</h2>
                   <img src={arrow} className={`py-[6px] px-[4.5px] transition-all duration-200 ${currency && 'rotate-180'}`} alt="arrow" />

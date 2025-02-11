@@ -1,8 +1,12 @@
 import React from 'react'
+import BestSelling from '../components/Home/BestSelling'
+import newarrivalnewpage from "../components/json/newarrivalnewpage.json";
+
 
 const NewArrival = () => {
-  return (
-    <div>NewArrival</div>
+  return (<>
+    <BestSelling data={newarrivalnewpage} bgNone="bg-[#FBFBFB]" />
+  </>
   )
 }
 

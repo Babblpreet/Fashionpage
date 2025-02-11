@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 // import SellingCards from '../json/Selling.json'
-import maskedarrow from '../../assets/svg/Maskedarrow.svg'
 import Selling from '../cards/SellingCards'
+import Buttonreuse from '../Ui/Buttonreuse'
 import CountdownTimer from '../Ui/CountdownTimer'
 
-const BestSelling = ({ heading, data, headname, bgNone, view }) => {
+const BestSelling = ({ heading, data, headname, bgNone, view ,timer}) => {
     return (
         <>
-            <section className={bgNone ? "" : "bg-[#F57E5D0A]"}>
+            <section className={`${bgNone ? bgNone : "bg-[#F57E5D0A]"} `}>
                 <div className='padcontain'>
                     <div className='container'>
                         <div className='flex items-center justify-between'>
@@ -15,8 +15,10 @@ const BestSelling = ({ heading, data, headname, bgNone, view }) => {
                                 <h2 className='commonheadname'>{headname}</h2>
                                 <h2 className='commonheading'>{heading}</h2>
                             </div>
-                            <button className={`border-none py-[10px] px-4 items-center flex gap-2 ${view ? "hidden" : "block"}`}><h2 className='text-orange-lightorange'>View All</h2><img src={maskedarrow} alt="maskedarrow " /></button>
-                            <div className={`${view ? "block" : "hidden"} flex gap-[14px] items-center`}>
+                            {view &&
+                                <Buttonreuse variant={"Simple"} children={"Shop Now"} />
+                            }
+                            <div className={`${timer ? "block" : "hidden"} flex gap-[14px] items-center`}>
                                 <h2 className='font-mulish_regular text-base leading-[25px] text-gray-highgray'>Deals Ends In :</h2>
                                 <CountdownTimer targetDate="2025-03-01" />
                             </div>

@@ -22,12 +22,12 @@ const Home = () => {
       <Banner />
       <Logosection />
       <Categorysec />
-      <BestSelling heading={"Best Selling Products"} headname={"Products"} data={SellingData} />
+      <BestSelling heading={"Best Selling Products"} headname={"Products"} data={SellingData} view={true} />
       <Grab />
-      <Explorebycat />
+      <Explorebycat view={true} />
       <Offersec />
       <Budgetdeals />
-      <BestSelling heading={"Deals On Sale"} headname={"Sale"} data={DealOnSale} bgNone={true} view={true} />
+      <BestSelling heading={"Deals On Sale"} headname={"Sale"} data={DealOnSale} bgNone="bg-white" timer={true} />
       <LiveSale />
       <Thought />
       <Feature />

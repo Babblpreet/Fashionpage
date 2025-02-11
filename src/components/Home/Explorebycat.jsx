@@ -1,9 +1,9 @@
 import React from 'react'
-import maskedarrow from '../../assets/svg/Maskedarrow.svg'
+import Buttonreuse from '../Ui/Buttonreuse'
 import explorebycat from '../../components/json/explorebycat.json'
 
 
-const Explorebycat = () => {
+const Explorebycat = ({view}) => {
     return (
         <>
             <section>
@@ -14,7 +14,9 @@ const Explorebycat = () => {
                                 <h2 className='commonheadname'>Categories</h2>
                                 <h2 className='commonheading'>Explore By Categories</h2>
                             </div>
-                            <button className='border-none py-[10px] px-4 items-center flex gap-2'><h2 className='text-orange-lightorange'>View All</h2><img src={maskedarrow} alt="maskedarrow " /></button>
+                            {view &&
+                                <Buttonreuse variant={"Simple"} children={"Shop Now"} />
+                            }
                         </div>
                         <div className='mt-[60px] flex gap-[30px]'>
                             {

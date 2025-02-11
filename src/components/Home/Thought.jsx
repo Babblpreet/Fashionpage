@@ -1,72 +1,63 @@
-import React from 'react'
-import image from "../../assets/images/livesale.png";
-import rectangle from '../../assets/images/Rectangle1.png'
-import Buttonreuse from '../Ui/Buttonreuse'
+import React, { useRef } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import SellingCards from '../cards/SellingCards';
+import data from '../../components/json/feature.json';
+import leftarrow from '../../assets/svg/leftarrow.svg'
 
 
 const Thought = () => {
-    return (    
+    const swiperRef = useRef();
+
+    return (
         <section>
             <div className="padcontain">
                 <div className="container">
-                    <Swiper slidesPerView={1}
-                                spaceBetween={0} navigation={true} modules={[Navigation]} className="mySwiper">
-                        <SwiperSlide>
-                            <div className="bg-cover bg-center h-[420px] w-full" style={{ backgroundImage: `url(${image})` }}>
-                                <div className="flex flex-col items-center gap-10 pt-[74px]">
-                                    <div className="relative">
-                                        <img src={rectangle} alt="rectangle" />
-                                        <h2 className="absolute top-[5px] left-[47px] text-orange-lightorange font-mulish_medium text-[20px] leading-[30px]">20th - 24th Sep</h2>
-                                    </div>
-                                    <div className="text-center">
-                                        <h2 className="text-white font-mulish_bold text-5xl leading-[65px]">Hurry Up ! The Sale is Live Now</h2>
-                                        <h3 className="mt-[10px] text-white font-mulish_medium text-xl leading-[30px]">Grab Upto 40% Off on Fashion</h3>
-                                    </div>
-                                    <Buttonreuse showarrow={true} children={"Shop Now"} />
-                                </div>
-                            </div>
-                        </SwiperSlide> 
-                        <SwiperSlide>
-                            <div className="bg-cover bg-center h-[420px] w-full" style={{ backgroundImage: `url(${image})` }}>
-                                <div className="flex flex-col items-center gap-10 pt-[74px]">
-                                    <div className="relative">
-                                        <img src={rectangle} alt="rectangle" />
-                                        <h2 className="absolute top-[5px] left-[47px] text-orange-lightorange font-mulish_medium text-[20px] leading-[30px]">20th - 24th Sep</h2>
-                                    </div>
-                                    <div className="text-center">
-                                        <h2 className="text-white font-mulish_bold text-5xl leading-[65px]">Hurry Up ! The Sale is Live Now</h2>
-                                        <h3 className="mt-[10px] text-white font-mulish_medium text-xl leading-[30px]">Grab Upto 40% Off on Fashion</h3>
-                                    </div>
-                                    <Buttonreuse showarrow={true} children={"Shop Now"} />
-                                </div>
-                            </div>
-                        </SwiperSlide> 
-                        <SwiperSlide>
-                            <div className="bg-cover bg-center h-[420px] w-full" style={{ backgroundImage: `url(${image})` }}>
-                                <div className="flex flex-col items-center gap-10 pt-[74px]">
-                                    <div className="relative">
-                                        <img src={rectangle} alt="rectangle" />
-                                        <h2 className="absolute top-[5px] left-[47px] text-orange-lightorange font-mulish_medium text-[20px] leading-[30px]">20th - 24th Sep</h2>
-                                    </div>
-                                    <div className="text-center">
-                                        <h2 className="text-white font-mulish_bold text-5xl leading-[65px]">Hurry Up ! The Sale is Live Now</h2>
-                                        <h3 className="mt-[10px] text-white font-mulish_medium text-xl leading-[30px]">Grab Upto 40% Off on Fashion</h3>
-                                    </div>
-                                    <Buttonreuse showarrow={true} children={"Shop Now"} />
-                                </div>
-                            </div>
-                        </SwiperSlide>
+                    <div className='flex items-center justify-between'>
+                        <div className='flex flex-col'>
+                            <h2 className='commonheadname'>Thought</h2>
+                            <h2 className='commonheading'>Our Users Thoughts</h2>
+                        </div>
+                        <div className='flex items-end'>
+                            <button onClick={() => swiperRef.current?.slidePrev()}><img src={leftarrow} alt='leftarrow' /></button>
+                            <button className='rotate-180' onClick={() => swiperRef.current?.slideNext()}><img src={leftarrow} alt='rightarrow' /></button>
+                        </div>
+                    </div>
+                    <div className='mt-[60px]'>
+                        <Swiper
+                            modules={[]}
+                            onBeforeInit={(swiper) => {
+                                swiperRef.current = swiper;
+                            }}
 
-                    </Swiper>
+                            loop={true}
+                            spaceBetween={20}
+                            slidesPerView={4}
+                        >
+                            {data.map((item, index) => (
+                                <SwiperSlide key={index}>
+                                    <SellingCards
+                                        image={item.image}
+                                        title={item.title}
+                                        heartsvg={item.heartsvg}
+                                        coloredtag={item.coloredtag}
+                                        coloroftag={item.coloroftag}
+                                        selectcolors={item.selectcolors}
+                                        colors={item.colors}
+                                        price={item.price}
+                                        discountprice={item.discountprice}
+                                        offpercent={item.offpercent}
+                                        showRating={item.showRating}
+                                    />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
 export default Thought

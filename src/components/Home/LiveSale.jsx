@@ -19,7 +19,7 @@ const LiveSale = () => {
                                 <h2 className="text-white font-mulish_bold text-5xl leading-[65px]">Hurry Up ! The Sale is Live Now</h2>
                                 <h3 className="mt-[10px] text-white font-mulish_medium text-xl leading-[30px]">Grab Upto 40% Off on Fashion</h3>
                             </div>
-                            <Buttonreuse showarrow={true} children={"Shop Now"} />
+                            <Buttonreuse showarrow={true} variant={"Solid"} children={"Shop Now"} />
                         </div>
                     </div>
                 </div>

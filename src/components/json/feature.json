@@ -1,6 +1,6 @@
 [
     {
-        "image": "src/assets/images/greytshirt.png",
+        "image": "src/assets/images/feature1.png",
         "title": "Grey Cotton T-Shirt",
         "heartsvg": "src/assets/svg/heart2card.svg",
         "coloredtag": "New",
@@ -20,16 +20,12 @@
         "price": "$ 20.00",
         "discountprice": "$32.00",
         "offpercent": "(15% Off)",
-        "showRating": true
+        "featurefalse":true
     },
     {
-        "image": "src/assets/images/greytshirt.png",
-        "title": "Grey Cotton T-Shirt",
+        "image": "src/assets/images/feature2.png",
+        "title": "Dark Blue T-Shirt",
         "heartsvg": "src/assets/svg/heart2card.svg",
-        "coloredtag": "New",
-        "coloroftag": [
-            "#F57E5D"
-        ],
         "star": "src/assets/svg/StarFilled.svg",
         "selectcolors": "Colors-",
         "colors": [
@@ -43,17 +39,17 @@
         "price": "$ 20.00",
         "discountprice": "$32.00",
         "offpercent": "(15% Off)",
-        "showRating": true
+        "featurefalse":true
     },
     {
-        "image": "src/assets/images/greytshirt.png",
-        "title": "Grey Cotton T-Shirt",
+        "image": "src/assets/images/feature3.png",
+        "title": "Sleeve Blouse Ruffle...",
         "heartsvg": "src/assets/svg/heart2card.svg",
-        "coloredtag": "New",
-        "coloroftag": [
-            "#F57E5D"
-        ],
         "star": "src/assets/svg/StarFilled.svg",
+        "coloredtag": "30% Off",
+        "coloroftag": [
+            "#29B6F6"
+        ],
         "selectcolors": "Colors-",
         "colors": [
             "#F57E5D",
@@ -66,16 +62,12 @@
         "price": "$ 20.00",
         "discountprice": "$32.00",
         "offpercent": "(15% Off)",
-        "showRating": true
+        "featurefalse":true
     },
     {
-        "image": "src/assets/images/greytshirt.png",
-        "title": "Grey Cotton T-Shirt",
+        "image": "src/assets/images/feature4.png",
+        "title": "Red Bluza Hoodie T-shirt ",
         "heartsvg": "src/assets/svg/heart2card.svg",
-        "coloredtag": "New",
-        "coloroftag": [
-            "#F57E5D"
-        ],
         "star": "src/assets/svg/StarFilled.svg",
         "selectcolors": "Colors-",
         "colors": [
@@ -89,15 +81,15 @@
         "price": "$ 20.00",
         "discountprice": "$32.00",
         "offpercent": "(15% Off)",
-        "showRating": true
+        "featurefalse":true
     },
     {
-        "image": "src/assets/images/greytshirt.png",
-        "title": "Grey Cotton T-Shirt",
+        "image": "src/assets/images/bluetshirt.png",
+        "title": "Blouse T-shirt Clothing ",
         "heartsvg": "src/assets/svg/heart2card.svg",
-        "coloredtag": "New",
+        "coloredtag": "Top Rated",
         "coloroftag": [
-            "#F57E5D"
+            "#FFA726"
         ],
         "star": "src/assets/svg/StarFilled.svg",
         "selectcolors": "Colors-",
@@ -112,15 +104,15 @@
         "price": "$ 20.00",
         "discountprice": "$32.00",
         "offpercent": "(15% Off)",
-        "showRating": true
+        "featurefalse":true
     },
     {
-        "image": "src/assets/images/greytshirt.png",
-        "title": "Grey Cotton T-Shirt",
+        "image": "src/assets/images/bluejeanshirt.png",
+        "title": "Jeans Denim  T- shirt",
         "heartsvg": "src/assets/svg/heart2card.svg",
-        "coloredtag": "New",
+        "coloredtag": "Sold Out",
         "coloroftag": [
-            "#F57E5D"
+            "#D32F2F"
         ],
         "star": "src/assets/svg/StarFilled.svg",
         "selectcolors": "Colors-",
@@ -135,15 +127,15 @@
         "price": "$ 20.00",
         "discountprice": "$32.00",
         "offpercent": "(15% Off)",
-        "showRating": true
+        "featurefalse":true
     },
     {
-        "image": "src/assets/images/greytshirt.png",
-        "title": "Grey Cotton T-Shirt",
+        "image": "src/assets/images/brownkot.png",
+        "title": " Sleeve Dress T-shirt  ",
         "heartsvg": "src/assets/svg/heart2card.svg",
-        "coloredtag": "New",
+        "coloredtag": "Top Rated",
         "coloroftag": [
-            "#F57E5D"
+            "#FFA726"
         ],
         "star": "src/assets/svg/StarFilled.svg",
         "selectcolors": "Colors-",
@@ -158,16 +150,12 @@
         "price": "$ 20.00",
         "discountprice": "$32.00",
         "offpercent": "(15% Off)",
-        "showRating": true
+        "featurefalse":true
     },
     {
-        "image": "src/assets/images/greytshirt.png",
-        "title": "Grey Cotton T-Shirt",
+        "image": "src/assets/images/pinkskirt.png",
+        "title": "Diving watch ",
         "heartsvg": "src/assets/svg/heart2card.svg",
-        "coloredtag": "New",
-        "coloroftag": [
-            "#F57E5D"
-        ],
         "star": "src/assets/svg/StarFilled.svg",
         "selectcolors": "Colors-",
         "colors": [
@@ -181,6 +169,6 @@
         "price": "$ 20.00",
         "discountprice": "$32.00",
         "offpercent": "(15% Off)",
-        "showRating": true
+        "featurefalse":true
     }
 ]

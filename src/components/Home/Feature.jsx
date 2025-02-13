@@ -48,7 +48,7 @@ const Feature = () => {
                                         price={item.price}
                                         discountprice={item.discountprice}
                                         offpercent={item.offpercent}
-                                        showRating={item.showRating}
+                                        featurefalse={item.featurefalse}
                                     />
                                 </SwiperSlide>
                             ))}

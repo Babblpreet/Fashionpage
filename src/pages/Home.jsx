@@ -27,7 +27,7 @@ const Home = () => {
       <Explorebycat view={true} />
       <Offersec />
       <Budgetdeals />
-      <BestSelling heading={"Deals On Sale"} headname={"Sale"} data={DealOnSale} bgNone="bg-white" timer={true} />
+      <BestSelling heading={"Deals On Sale"} headname={"Sale"} data={DealOnSale} bgNone="bg-white" timer={true}/>
       <LiveSale />
       <Thought />
       <Feature />

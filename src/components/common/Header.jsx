@@ -22,7 +22,7 @@ const Header = () => {
       <header>
         <div className='container pt-[30px] pb-[30px] flex flex-col gap-[14px]'>
           <div className='flex items-center justify-between'>
-            <Link to={"/home"}>
+            <Link to={"/"}>
               <h1 className='text-orange-lightorange font-mulish_bold text-[28px] leading-[38px]'>FashionCarts<span className='text-[#02A77D]'>.</span></h1>
             </Link>
             <div className='flex max-w-[1090px] w-full'>

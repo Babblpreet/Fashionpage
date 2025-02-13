@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const SellingCards = ({ showRating, image, title, heartsvg, coloredtag, star, rated, price, discountprice, offpercent, selectcolors, colors, coloroftag }) => {
+const SellingCards = ({ showRating, image, title, heartsvg, coloredtag, star, rated, price, discountprice, offpercent, selectcolors, colors, featurefalse, coloroftag }) => {
 
 
     const [like, setlike] = useState(false);
@@ -9,10 +9,11 @@ const SellingCards = ({ showRating, image, title, heartsvg, coloredtag, star, ra
 
 
 
+
     return (
         <>
-            <div className={`p-[14px] bg-white rounded-[14px] overflow-hidden ${!colors && "p-0 rounded-t-[30px]"}`}>
-                <div className={`${!colors && "max-w-none rounded-none"} relative group max-w-[347px] w-full  h-[364px] bg-[#FBFBFB] flex items-center justify-center rounded-[10px] mb-[14px]`} >
+            <div className={`${featurefalse ? "!p-0" : ""} p-[14px] bg-white rounded-[14px] overflow-hidden ${!colors && "!p-0"}`}>
+                <div className={`${featurefalse ? "h-[480px]" : ""} ${!colors && "mb-0 px-[14px] rounded-t-[30px] overflow-hidden h-[336px] "} relative group max-w-[375px] w-full bg-[#FBFBFB] flex items-center justify-center rounded-[10px] mb-[14px] h-[364px]`} >
                     <img src={image} alt={title} />
                     <button className='absolute bottom-[10px] opacity-0 group-hover:opacity-100 transition-opacity
                                     duration-500 ease-in-out py-4 px-[94px] rounded-lg bg-orange-lightorange'><h2 className='font-mulish_semibold text-xl leading-7 text-white'>Add To Cart</h2></button>
@@ -23,10 +24,10 @@ const SellingCards = ({ showRating, image, title, heartsvg, coloredtag, star, ra
                     <div className={`absolute p-[9px] rounded-full top-[14px] right-[14px] transition-transform duration-300 ease-in-out    hover:scale-[1.07] cursor-pointer ${like ? 'bg-orange-lightorange' : 'bg-white'}`} onClick={() => setlike(!like)}><img src={heartsvg} alt="like" />
                     </div>
                 </div>
-                <div className={`flex flex-col gap-[10px] py-1 ${!colors && 'items-center gap-[6px] py-0'}`}>
+                <div className={`flex flex-col gap-[10px] py-1 ${!colors && 'items-center gap-[6px] py-[6px] mt-[10px]'}`}>
                     <div className={`flex justify-between items-center ${!colors && "flex-col gap-[6px]"}`}>
                         <h2 className='font-mulish_medium text-xl leading-[30px] text-gray-medgray'>{title}</h2>
-                        {!showRating && (
+                        {showRating && (
                             <div className="flex gap-1">
                                 <img src={star} alt="star" />
                                 <h3 className="font-mulish_regular text-base leading-[25px] text-gray-lightgray">{rated}</h3>

@@ -4,7 +4,7 @@ import Selling from '../cards/SellingCards'
 import Buttonreuse from '../Ui/Buttonreuse'
 import CountdownTimer from '../Ui/CountdownTimer'
 
-const BestSelling = ({ heading, data, headname, bgNone, view ,timer}) => {
+const BestSelling = ({ heading, data, headname, bgNone, view , timer }) => {
     return (
         <>
             <section className={`${bgNone ? bgNone : "bg-[#F57E5D0A]"} `}>
@@ -40,6 +40,8 @@ const BestSelling = ({ heading, data, headname, bgNone, view ,timer}) => {
                                     price={item.price}
                                     discountprice={item.discountprice}
                                     offpercent={item.offpercent}
+                                    showRating={true}
+                                    
                                 />
 
                             ))
